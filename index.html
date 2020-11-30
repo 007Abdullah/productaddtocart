@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Add To Cart </title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <!-- will calculate prize -->
+            <td>Product First Price : </td>
+            <td>
+                <span id="price">100 </span>
+            </td>
+
+            <td><button type="button" id="minus">-</button></td>
+            <td><input type="text" id="quantity" value="1" readonly style="width: 50px; text-align: center;"></td>
+            <td><button type="button" id="plus">+</button></td>
+        </tr>
+
+        <!-- second -->
+        <tr>
+
+            <!-- will calculate prize -->
+            <td>Product Second Price</td>
+            <td>
+
+                <span id="twoprice">200</span>
+            </td>
+
+
+            <td><button type="button" id="secondminus">-</button></td>
+            <td><input type="text" id="secondquantity" value="1" readonly style="width: 50px; text-align: center;"></td>
+            <td><button type="button" id="secondplus">+</button></td>
+        </tr>
+    </table>
+    <button type="button" onclick="CheckOut()"> CheckOut </button>
+    <h2>Product Price</h2>
+    <p id="sum"> </p>
+
+</body>
+<script src="index.js"></script>
+
+
+</html>
